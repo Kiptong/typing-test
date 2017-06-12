@@ -16,3 +16,7 @@ for (var i = 0; i < chars.length; i++) {
 }
 var $current = document.querySelector('span')
 $current.classList.add('current')
+
+document.addEventListener('keypress', function() {
+
+})
