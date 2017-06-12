@@ -1,3 +1,11 @@
 .current {
   font-weight: bold;
 }
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}
