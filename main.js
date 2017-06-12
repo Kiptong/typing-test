@@ -17,6 +17,14 @@ for (var i = 0; i < chars.length; i++) {
 var $current = document.querySelector('span')
 $current.classList.add('current')
 
-document.addEventListener('keypress', function() {
-
+document.addEventListener('keypress', function(event) {
+  if ($current.textContent === event.key) {
+    $current.classList.remove('current')
+    $current.classList.add('correct')
+  }
+  else {
+    $current.classList.remove('current')
+    $current.classList.add('wrong')
+  }
+  $current = $current.nextSibling
 })
