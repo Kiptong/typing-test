@@ -21,12 +21,10 @@ $current.classList.add('current')
 
 document.addEventListener('keypress', function(event) {
   if ($current === null) {
-    console.log(right, test)
     var testScore = ((right.length/test.textContent.length) * 100)
     var $testScore = document.querySelector('h2')
     $testScore.textContent = 'You had ' + testScore + '% right!'
     score.appendChild($testScore)
-    console.log('done')
   }
   else if ($current.textContent === event.key) {
     $current.classList.remove('current')
